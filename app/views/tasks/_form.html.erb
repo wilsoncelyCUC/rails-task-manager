@@ -1,0 +1,13 @@
+<%= form_for (@task) do |f| %>
+  <%= f.label :title, "Tittle" %>
+  <%= f.text_field :title %>
+
+  <%= f.label :details, "Details" %>
+  <%= f.text_field :details %>
+
+  <%= f.label :completed, "completed" %>
+  <%= f.text_field :completed %>
+  <%= f.submit %>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+<% end %>
